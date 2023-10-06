@@ -10,6 +10,102 @@
 <body>
     <header></header>
     <div class="container">
+
+        <div class="contentCourse">
+            <h1>¿Que es JavaScript - Js</h1>
+            <p>
+                Es un elnguaje de programacion interpretado, orientado a obbejtos, debilmente tipado
+                y dinamico, para el desarrollo web.
+
+                es debilmente tipado por que puede hacer algunas operaciones como estos ejemplos 
+
+                4 + "7"; // 47 aqui JavaScriptdice que en vez de un texto iba un numero entonces junta el 
+                4 con el 7 
+                4 * "7"; aqui java script dice lo mismo que quizas no era un texto sino un numero y genera
+                esta operacion.
+
+                Es dinamico por que no se tiene que compilar
+            </p>
+
+            <h1>Por que JavaScript?</h1>
+            <p>
+                JavaScripttiene la ventaja que nos facilitara el manejo de algunos frameworks 
+                de este, tales como Angular. react y vueJs.
+                <br>
+                tambien para tenemos frameworks para el desarrollo de aplicaciones multi plataforma 
+                como react native, que nos permite hacer desarrollo para aplicaciones ios y android.
+                <br>
+                tambien existen otro frame work para el desarrollo de aplicaciones de escritorio 
+                tanto para windows como para mac
+
+            </p>
+
+            <h1>Scope</h1>
+
+            <p>
+                alcance de las varaibles, global y local, decir existen variables 
+                Globales y variables locales.
+                <br>
+                De esta manera en este ejemplo se puede obervar y entender <br>
+                un poco mejor el scope
+                <pre>
+                     var nombre = "oscar"
+                     //scope Global 
+
+                     function fuc(){
+                        var apellido = "Giraldo";
+                        return nombre + "" + apellido
+                        //scope local
+                     }
+
+                     fun(); // "oscar Giraldo"
+                </pre>
+
+
+            </p>
+
+            <h1>Coerción</h1>
+            <p>
+                Es la forma en que podemos cambiar un tipo de valor a otro tipo de
+                valor, y existen dos tipos de coercion:
+                <ul>
+                    <li>Coerción implicita</li>
+                    <li>Coerción Explicita</li>
+                </ul>
+            </p>
+
+            <h1>Coerción Implicita</h1>
+            <p>
+                Es cuando el lenguaje nos ayuda y cambia de untipo de valor
+                otro tipo de valor
+
+                4 + "7"; // "47" aqui el lenguaje asume que se concatena el 4 a una cadena de texto
+                4 * "7"; // 28 en esta si asume que es una multiplicacion y cambia el tipo del valor "7" 
+                de cadena a numero
+            </p>
+
+            <h1>Coerción Explicita</h1>
+            <P>
+                Es la forma en que nosotros obligamos a que un valor de un tipos
+                cambio a otro valor de otro tipo
+
+                <br>
+                <span>Ejemplo</span>
+
+                obligar al cambio de tipos
+
+                var a = 20; // queremos que el numero 20 se convierta en un string sin 
+                //necesidad de hacer esto
+                //var b = a + "";
+
+                var c = String (a);
+                typoof c --> String
+
+                // el metodo String es una coerción explicita
+
+            </P>
+        </div>
+
         <h1>Formas de utilizarlo</h1>
         <ul class="formasUtilizarJs">
             <li>
@@ -21,7 +117,9 @@
             </li>
             <li>
                 <div class="contentList">
-                    <h2>Dentro de la etiqueta (script)</h2>
+                    <h2>Dentro de la etiqueta <pre>
+                        <script></script>
+                    </pre></h2>
                     <script>
                         alert('hola, se ejecuta codigo js en la etiqueta script')
                     </script>
@@ -44,8 +142,19 @@
                         <h3>¿Que son las variables?</h3>
                         <p>
                             Una Variables es un espacio que se guarda en memoria, 
-                            dentro de este puede contener un valor el cual puede cambiar
+                            dentro de este puede contener un valor el cual puede cambiar. 
+                            <br>
+                            <br>
+                            las variables se pueden declarar, se pueden inicializar y cambiar a lo 
+                            largo del desarrollo
+                            <br>
                         </p>
+                        <h3>Formas de declarar una variable</h3>
+                        <ul>
+                            <li>var</li>
+                            <li>let</li>
+                            <li>const</li>
+                        </ul>
                     </div>
                 </li>
                 <li>
